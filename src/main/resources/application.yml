@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+#直接连接数据库方式
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.45:3306/ht-seal?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: haitai@123
+
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  typeAliasesPackage: com.haitai.template.entity
+  global-config:
+    id-type: 1
+    db-column-underline: true
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    multipleResultSetsEnabled: false
+    call-setters-on-nulls: false
+    return-instance-for-empty-row: false
