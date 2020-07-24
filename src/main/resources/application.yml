@@ -9,6 +9,13 @@ spring:
     username: root
     password: haitai@123
 
+  redis:
+    host: 192.168.0.45
+    port: 6379
+    password: 123456
+  cache:
+    type: redis
+
 #mybatis-plus配置
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
@@ -23,3 +30,8 @@ mybatis-plus:
     multipleResultSetsEnabled: false
     call-setters-on-nulls: false
     return-instance-for-empty-row: false
+
+#打印sql语句
+logging:
+  level:
+    com.haitai.template.dao: debug

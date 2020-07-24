@@ -58,7 +58,7 @@ public class MybatisPlusGenerator {
         StrategyConfig strategy = new StrategyConfig();
 //        strategy.setTablePrefix(new String[]{""});// 此处可以修改为您的表前缀
         //需要生成的表
-        strategy.setInclude(new String[]{"t_seal_record"});
+        strategy.setInclude(new String[]{"t_auth_resource"});
         //表名生成策略
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setDbColumnUnderline(true);

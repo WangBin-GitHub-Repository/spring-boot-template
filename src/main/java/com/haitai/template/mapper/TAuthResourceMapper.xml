@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haitai.template.dao.TAuthResourceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.haitai.template.entity.TAuthResource">
+        <id column="id" property="id" />
+        <result column="resource_url" property="resourceUrl" />
+        <result column="resource_name" property="resourceName" />
+        <result column="parent_id" property="parentId" />
+        <result column="icon_type" property="iconType" />
+        <result column="sort" property="sort" />
+        <result column="second_sort" property="secondSort" />
+        <result column="check_status" property="checkStatus" />
+        <result column="resource_description" property="resourceDescription" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_modified" property="gmtModified" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, resource_url, resource_name, parent_id, icon_type, sort, second_sort, check_status, resource_description, gmt_create, gmt_modified
+    </sql>
+
+</mapper>

@@ -36,12 +36,11 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ht.back.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.haitai.template.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .globalOperationParameters(pars);
     }
-
 
 
     private ApiInfo apiInfo() {
